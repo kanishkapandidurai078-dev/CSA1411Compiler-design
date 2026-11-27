@@ -1,0 +1,17 @@
+%{
+%}
+%%
+
+[0-9]+ {printf("\nIt is a Digit\n");}
+
+.+ {printf("\nIt is Not a Digit\n");}
+
+%%
+
+int yywrap(void) {}
+
+int main()
+{
+    printf("\nEnter a Character : ");
+    yylex();
+}
